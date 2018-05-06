@@ -49,6 +49,7 @@ public:
         return *this;
     }
 
+    // s means a transaction
     Database& process(std::string s) {
         std::stringstream ss{s};
         process(ss);
