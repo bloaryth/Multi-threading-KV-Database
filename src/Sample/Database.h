@@ -13,6 +13,7 @@ namespace sample {
 
 class Database {
 
+private:
     DataSet data;
     std::stringstream ss;
 
@@ -24,7 +25,12 @@ private:
                 data.put(k, v);
                 break;
             case Command::GET :
-                ss << data.get(k) << ' ';
+                try {
+                    ss << data.get(k) << ' ';
+                }
+                catch (...){
+                    std::cerr << "key \"" << k << "\" does not exist.\n";
+                }
                 break;
             case Command::DEL :
                 data.del(k);
@@ -43,8 +49,13 @@ public:
             Command c;
             std::string k;
             std::string v;
-            std::tie(c, k, v) = Parser::decode(command);
-            processSingle(c, k, v);
+            try{
+                std::tie(c, k, v) = Parser::decode(command);
+                processSingle(c, k, v);
+            }
+            catch (UnknownCommandType){
+                std::cerr << "UnknownCommandType in \"" << command << "\".\n";
+            }
         }
         return *this;
     }
