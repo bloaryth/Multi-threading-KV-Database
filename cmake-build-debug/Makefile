@@ -122,6 +122,33 @@ System2018_Database/fast:
 	$(MAKE) -f CMakeFiles\System2018_Database.dir\build.make CMakeFiles/System2018_Database.dir/build
 .PHONY : System2018_Database/fast
 
+src/BpTree/bpt.obj: src/BpTree/bpt.cc.obj
+
+.PHONY : src/BpTree/bpt.obj
+
+# target to build an object file
+src/BpTree/bpt.cc.obj:
+	$(MAKE) -f CMakeFiles\System2018_Database.dir\build.make CMakeFiles/System2018_Database.dir/src/BpTree/bpt.cc.obj
+.PHONY : src/BpTree/bpt.cc.obj
+
+src/BpTree/bpt.i: src/BpTree/bpt.cc.i
+
+.PHONY : src/BpTree/bpt.i
+
+# target to preprocess a source file
+src/BpTree/bpt.cc.i:
+	$(MAKE) -f CMakeFiles\System2018_Database.dir\build.make CMakeFiles/System2018_Database.dir/src/BpTree/bpt.cc.i
+.PHONY : src/BpTree/bpt.cc.i
+
+src/BpTree/bpt.s: src/BpTree/bpt.cc.s
+
+.PHONY : src/BpTree/bpt.s
+
+# target to generate assembly for a file
+src/BpTree/bpt.cc.s:
+	$(MAKE) -f CMakeFiles\System2018_Database.dir\build.make CMakeFiles/System2018_Database.dir/src/BpTree/bpt.cc.s
+.PHONY : src/BpTree/bpt.cc.s
+
 src/main.obj: src/main.cpp.obj
 
 .PHONY : src/main.obj
@@ -158,6 +185,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... System2018_Database
 	@echo ... edit_cache
+	@echo ... src/BpTree/bpt.obj
+	@echo ... src/BpTree/bpt.i
+	@echo ... src/BpTree/bpt.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

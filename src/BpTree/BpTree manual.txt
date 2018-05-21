@@ -1,0 +1,68 @@
+BpTree Manual
+段宇轩
+
+------ 简介 ------
+
+本 BpTree 为对 https://github.com/zcbenz/BPlusTree B+树类的简单包装。
+
+------ 使用方法 ------
+
+将 BpTree.hpp predefined.h bpt.h bpt.cc 拷至项目同一目录下，在其他文件中 #include "BpTree.hpp" 即可。
+
+------ 类型定义 ------
+
+key_type 为 int 型的包装，通过 .k 获得数据。
+value_type 为1024字节 char 型的包装，通过 .str 获得数据。
+以上两类在传参数时直接输入数或字符串即可。
+
+------ API 列表 ------
+
+BpTree (const char * filename)
+描述:
+	构造函数。
+返回值： 
+	BpTree 实例。
+参数：
+	filename：
+		用于存储B+树数据的文件路径。
+		支持绝对路径。（e.g. C:\\Users\\admin\\Desktop\\BpTree.data）
+		或相对路径。（e.g. ./data/BpTree.data）
+		路径上的文件夹必须已经存在，但数据文件不必已经存在。
+		数据采用单文件存储，为二进制文件形式。
+		若文件已存在，BpTree 会读取目标文件中的数据。
+		
+bool find(const key_type & key)
+描述：
+	寻找 BpTree 中是否存在键为 key 的项。
+返回值：
+	true：存在。
+	false：不存在。
+参数：
+	key：用于寻找的键。
+		
+value_type get(const key_type & key)
+描述：
+	获取键为 key 的项的值。
+返回值：
+	value_type 实例，可用 .str 获取字符数组。
+参数：
+	key：用于获取的键。
+	
+bool insert(const key_type & key, const value_type & value)
+描述：
+	用来添加或更新项。
+返回值：
+	true：操作成功。
+参数：
+	key：添加项或更新项的键。
+	value：添加项或更新项的值。
+	
+bool erase(const key_type & key)
+描述：
+	用来删除项。
+返回值：
+	true：操作成功。
+	false：不存在键为 key 的项。
+参数：
+	key：即将删除的项。
+	

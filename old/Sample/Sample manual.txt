@@ -1,0 +1,24 @@
+Sample manual
+周久钦
+
+------ 简介 ------
+
+Os Database group 大作业sample版, 意在展示 Database 的架构和 Transaction 的概念, 不具有实际使用价值.
+
+------ 架构 ------
+
+对 Database 的操作通过传递字符串实现.
+字符串形如 (Command key value\n)+
+其中
+    Command: PUT GET DEL
+    key: a str without whitespace
+    value: str-like without whitespace
+
+字符串就是 Transaction.
+
+------ 待实现 ------
+
+1. B+树存储
+2. Transaction ACID (Logging)
+4. multi-threading
+

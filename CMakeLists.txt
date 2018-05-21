@@ -3,4 +3,4 @@ project(System2018_Database)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(System2018_Database src/main.cpp)
+add_executable(System2018_Database src/main.cpp src/BpTree/bpt.h src/BpTree/bpt.cc src/BpTree/predefined.h src/BpTree/BpTree.hpp)
