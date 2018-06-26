@@ -8,33 +8,54 @@
 #include <string>
 #include <fstream>
 #include "DataSet.h"
+#include <vector>
+#include "Tools.hpp"
 
 class DataSet;
 
 class Logger {
+	const std::string LOG_RECORD_PATH = "LOG_RECORD.txt";
+public:
+	class LogPiece
+	{
+	public:
+	private:
+		sample::Command operation;
+		int key;
+		std::string value;
+		bool is_date;
+		Date date;
+	public:
+		LogPiece(sample::Command op, int k, std::string v);
+		LogPiece(Date d);
+		LogPiece(std::tuple<sample::Command, int, std::string> t);
+	};
 private:
-    // logger path
-    std::string logPath;
+	// logger path
+	std::string logPath;
+	sample::Parser parser;
 
-    // get the exactly context useful for database restore
-    std::string getRestoreContext(){
-        // TODO
-    }
+	// get the exactly context useful for database restore
+	std::vector<LogPiece> getRestoreContext();
+	std::string getLastLogPath();
 
 public:
-    Logger(std::string filename): logPath(filename) {
+	Logger(std::string filename) : logPath(filename) {
 
-    }
+	}
 
-    // create log
-    void createLog(std::string transaction){
-        // TODO
-    }
+	// create log
+	void createLog(std::string transaction) {
+		// TODO
+	}
 
-    // restore the database by log
-    void restore(DataSet & database){
-        // TODO
-    }
+	// restore the database by log
+	void restore(DataSet & database) {
+		// TODO
+	}
+private:
+	std::vector<std::string> getWholeLog();
+	std::LogPiece getLogPiece(std::tuple<sample::Command, int, std::string> t);
 };
 
 
