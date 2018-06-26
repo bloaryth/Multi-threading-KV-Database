@@ -3,4 +3,4 @@ project(System2018_Database)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(System2018_Database src/main.cpp src/BpTree/bpt.h src/BpTree/bpt.cc src/BpTree/predefined.h src/BpTree/BpTree.hpp)
+add_executable(System2018_Database SingleThread/main.cpp SingleThread/BpTree/bpt.h SingleThread/BpTree/bpt.cc SingleThread/BpTree/predefined.h SingleThread/BpTree/BpTree.hpp)

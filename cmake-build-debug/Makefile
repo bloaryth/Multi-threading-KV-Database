@@ -38,19 +38,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\CLion 2018.1.5\bin\cmake\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.1.2\bin\cmake\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\CLion 2018.1.5\bin\cmake\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2018.1.2\bin\cmake\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\qydyx\Desktop\System2018-Database
+CMAKE_SOURCE_DIR = D:\Coding\system\System2018-Database
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\qydyx\Desktop\System2018-Database\cmake-build-debug
+CMAKE_BINARY_DIR = D:\Coding\system\System2018-Database\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = C:\Users\qydyx\Desktop\System2018-Database\cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"D:\CLion 2018.1.5\bin\cmake\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2018.1.2\bin\cmake\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -69,7 +69,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"D:\CLion 2018.1.5\bin\cmake\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2018.1.2\bin\cmake\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -79,9 +79,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\qydyx\Desktop\System2018-Database\cmake-build-debug\CMakeFiles C:\Users\qydyx\Desktop\System2018-Database\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Coding\system\System2018-Database\cmake-build-debug\CMakeFiles D:\Coding\system\System2018-Database\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\qydyx\Desktop\System2018-Database\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Coding\system\System2018-Database\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,59 +122,59 @@ System2018_Database/fast:
 	$(MAKE) -f CMakeFiles\System2018_Database.dir\build.make CMakeFiles/System2018_Database.dir/build
 .PHONY : System2018_Database/fast
 
-src/BpTree/bpt.obj: src/BpTree/bpt.cc.obj
+SingleThread/BpTree/bpt.obj: SingleThread/BpTree/bpt.cc.obj
 
-.PHONY : src/BpTree/bpt.obj
-
-# target to build an object file
-src/BpTree/bpt.cc.obj:
-	$(MAKE) -f CMakeFiles\System2018_Database.dir\build.make CMakeFiles/System2018_Database.dir/src/BpTree/bpt.cc.obj
-.PHONY : src/BpTree/bpt.cc.obj
-
-src/BpTree/bpt.i: src/BpTree/bpt.cc.i
-
-.PHONY : src/BpTree/bpt.i
-
-# target to preprocess a source file
-src/BpTree/bpt.cc.i:
-	$(MAKE) -f CMakeFiles\System2018_Database.dir\build.make CMakeFiles/System2018_Database.dir/src/BpTree/bpt.cc.i
-.PHONY : src/BpTree/bpt.cc.i
-
-src/BpTree/bpt.s: src/BpTree/bpt.cc.s
-
-.PHONY : src/BpTree/bpt.s
-
-# target to generate assembly for a file
-src/BpTree/bpt.cc.s:
-	$(MAKE) -f CMakeFiles\System2018_Database.dir\build.make CMakeFiles/System2018_Database.dir/src/BpTree/bpt.cc.s
-.PHONY : src/BpTree/bpt.cc.s
-
-src/main.obj: src/main.cpp.obj
-
-.PHONY : src/main.obj
+.PHONY : SingleThread/BpTree/bpt.obj
 
 # target to build an object file
-src/main.cpp.obj:
-	$(MAKE) -f CMakeFiles\System2018_Database.dir\build.make CMakeFiles/System2018_Database.dir/src/main.cpp.obj
-.PHONY : src/main.cpp.obj
+SingleThread/BpTree/bpt.cc.obj:
+	$(MAKE) -f CMakeFiles\System2018_Database.dir\build.make CMakeFiles/System2018_Database.dir/SingleThread/BpTree/bpt.cc.obj
+.PHONY : SingleThread/BpTree/bpt.cc.obj
 
-src/main.i: src/main.cpp.i
+SingleThread/BpTree/bpt.i: SingleThread/BpTree/bpt.cc.i
 
-.PHONY : src/main.i
+.PHONY : SingleThread/BpTree/bpt.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles\System2018_Database.dir\build.make CMakeFiles/System2018_Database.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+SingleThread/BpTree/bpt.cc.i:
+	$(MAKE) -f CMakeFiles\System2018_Database.dir\build.make CMakeFiles/System2018_Database.dir/SingleThread/BpTree/bpt.cc.i
+.PHONY : SingleThread/BpTree/bpt.cc.i
 
-src/main.s: src/main.cpp.s
+SingleThread/BpTree/bpt.s: SingleThread/BpTree/bpt.cc.s
 
-.PHONY : src/main.s
+.PHONY : SingleThread/BpTree/bpt.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles\System2018_Database.dir\build.make CMakeFiles/System2018_Database.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+SingleThread/BpTree/bpt.cc.s:
+	$(MAKE) -f CMakeFiles\System2018_Database.dir\build.make CMakeFiles/System2018_Database.dir/SingleThread/BpTree/bpt.cc.s
+.PHONY : SingleThread/BpTree/bpt.cc.s
+
+SingleThread/main.obj: SingleThread/main.cpp.obj
+
+.PHONY : SingleThread/main.obj
+
+# target to build an object file
+SingleThread/main.cpp.obj:
+	$(MAKE) -f CMakeFiles\System2018_Database.dir\build.make CMakeFiles/System2018_Database.dir/SingleThread/main.cpp.obj
+.PHONY : SingleThread/main.cpp.obj
+
+SingleThread/main.i: SingleThread/main.cpp.i
+
+.PHONY : SingleThread/main.i
+
+# target to preprocess a source file
+SingleThread/main.cpp.i:
+	$(MAKE) -f CMakeFiles\System2018_Database.dir\build.make CMakeFiles/System2018_Database.dir/SingleThread/main.cpp.i
+.PHONY : SingleThread/main.cpp.i
+
+SingleThread/main.s: SingleThread/main.cpp.s
+
+.PHONY : SingleThread/main.s
+
+# target to generate assembly for a file
+SingleThread/main.cpp.s:
+	$(MAKE) -f CMakeFiles\System2018_Database.dir\build.make CMakeFiles/System2018_Database.dir/SingleThread/main.cpp.s
+.PHONY : SingleThread/main.cpp.s
 
 # Help Target
 help:
@@ -185,12 +185,12 @@ help:
 	@echo ... rebuild_cache
 	@echo ... System2018_Database
 	@echo ... edit_cache
-	@echo ... src/BpTree/bpt.obj
-	@echo ... src/BpTree/bpt.i
-	@echo ... src/BpTree/bpt.s
-	@echo ... src/main.obj
-	@echo ... src/main.i
-	@echo ... src/main.s
+	@echo ... SingleThread/BpTree/bpt.obj
+	@echo ... SingleThread/BpTree/bpt.i
+	@echo ... SingleThread/BpTree/bpt.s
+	@echo ... SingleThread/main.obj
+	@echo ... SingleThread/main.i
+	@echo ... SingleThread/main.s
 .PHONY : help
 
 

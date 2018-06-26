@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/qydyx/Desktop/System2018-Database
+# Install script for directory: D:/Coding/system/System2018-Database
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/qydyx/Desktop/System2018-Database/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Coding/system/System2018-Database/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

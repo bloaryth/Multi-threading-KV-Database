@@ -8,7 +8,7 @@ BpTree Manual
 	2.Manual中新增了关于修改 CMakeList.txt 的说明
 	
 2018.6.24
-	1.添加了多线程支持（c++17, mutex, shared_mutex, thread）
+	1.添加了多线程支持（c++17, queueMutex, shared_mutex, thread）
 	2.【重要】 API 用法有所变化，请务必关注！！！
 	
 2018.6.26

@@ -33,19 +33,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\CLion 2018.1.5\bin\cmake\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.1.2\bin\cmake\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\CLion 2018.1.5\bin\cmake\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2018.1.2\bin\cmake\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\qydyx\Desktop\System2018-Database
+CMAKE_SOURCE_DIR = D:\Coding\system\System2018-Database
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\qydyx\Desktop\System2018-Database\cmake-build-debug
+CMAKE_BINARY_DIR = D:\Coding\system\System2018-Database\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/System2018_Database.dir/depend.make
@@ -56,69 +56,69 @@ include CMakeFiles/System2018_Database.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/System2018_Database.dir/flags.make
 
-CMakeFiles/System2018_Database.dir/src/main.cpp.obj: CMakeFiles/System2018_Database.dir/flags.make
-CMakeFiles/System2018_Database.dir/src/main.cpp.obj: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\qydyx\Desktop\System2018-Database\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/System2018_Database.dir/src/main.cpp.obj"
-	D:\mingw-w64\x86_64-7.3.0-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\System2018_Database.dir\src\main.cpp.obj -c C:\Users\qydyx\Desktop\System2018-Database\src\main.cpp
+CMakeFiles/System2018_Database.dir/SingleThread/main.cpp.obj: CMakeFiles/System2018_Database.dir/flags.make
+CMakeFiles/System2018_Database.dir/SingleThread/main.cpp.obj: ../SingleThread/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Coding\system\System2018-Database\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/System2018_Database.dir/SingleThread/main.cpp.obj"
+	C:\compiler\mingw-w64\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\System2018_Database.dir\SingleThread\main.cpp.obj -c D:\Coding\system\System2018-Database\SingleThread\main.cpp
 
-CMakeFiles/System2018_Database.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/System2018_Database.dir/src/main.cpp.i"
-	D:\mingw-w64\x86_64-7.3.0-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\qydyx\Desktop\System2018-Database\src\main.cpp > CMakeFiles\System2018_Database.dir\src\main.cpp.i
+CMakeFiles/System2018_Database.dir/SingleThread/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/System2018_Database.dir/SingleThread/main.cpp.i"
+	C:\compiler\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Coding\system\System2018-Database\SingleThread\main.cpp > CMakeFiles\System2018_Database.dir\SingleThread\main.cpp.i
 
-CMakeFiles/System2018_Database.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/System2018_Database.dir/src/main.cpp.s"
-	D:\mingw-w64\x86_64-7.3.0-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\qydyx\Desktop\System2018-Database\src\main.cpp -o CMakeFiles\System2018_Database.dir\src\main.cpp.s
+CMakeFiles/System2018_Database.dir/SingleThread/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/System2018_Database.dir/SingleThread/main.cpp.s"
+	C:\compiler\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Coding\system\System2018-Database\SingleThread\main.cpp -o CMakeFiles\System2018_Database.dir\SingleThread\main.cpp.s
 
-CMakeFiles/System2018_Database.dir/src/main.cpp.obj.requires:
+CMakeFiles/System2018_Database.dir/SingleThread/main.cpp.obj.requires:
 
-.PHONY : CMakeFiles/System2018_Database.dir/src/main.cpp.obj.requires
+.PHONY : CMakeFiles/System2018_Database.dir/SingleThread/main.cpp.obj.requires
 
-CMakeFiles/System2018_Database.dir/src/main.cpp.obj.provides: CMakeFiles/System2018_Database.dir/src/main.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\System2018_Database.dir\build.make CMakeFiles/System2018_Database.dir/src/main.cpp.obj.provides.build
-.PHONY : CMakeFiles/System2018_Database.dir/src/main.cpp.obj.provides
+CMakeFiles/System2018_Database.dir/SingleThread/main.cpp.obj.provides: CMakeFiles/System2018_Database.dir/SingleThread/main.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\System2018_Database.dir\build.make CMakeFiles/System2018_Database.dir/SingleThread/main.cpp.obj.provides.build
+.PHONY : CMakeFiles/System2018_Database.dir/SingleThread/main.cpp.obj.provides
 
-CMakeFiles/System2018_Database.dir/src/main.cpp.obj.provides.build: CMakeFiles/System2018_Database.dir/src/main.cpp.obj
+CMakeFiles/System2018_Database.dir/SingleThread/main.cpp.obj.provides.build: CMakeFiles/System2018_Database.dir/SingleThread/main.cpp.obj
 
 
-CMakeFiles/System2018_Database.dir/src/BpTree/bpt.cc.obj: CMakeFiles/System2018_Database.dir/flags.make
-CMakeFiles/System2018_Database.dir/src/BpTree/bpt.cc.obj: ../src/BpTree/bpt.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\qydyx\Desktop\System2018-Database\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/System2018_Database.dir/src/BpTree/bpt.cc.obj"
-	D:\mingw-w64\x86_64-7.3.0-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\System2018_Database.dir\src\BpTree\bpt.cc.obj -c C:\Users\qydyx\Desktop\System2018-Database\src\BpTree\bpt.cc
+CMakeFiles/System2018_Database.dir/SingleThread/BpTree/bpt.cc.obj: CMakeFiles/System2018_Database.dir/flags.make
+CMakeFiles/System2018_Database.dir/SingleThread/BpTree/bpt.cc.obj: ../SingleThread/BpTree/bpt.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Coding\system\System2018-Database\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/System2018_Database.dir/SingleThread/BpTree/bpt.cc.obj"
+	C:\compiler\mingw-w64\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\System2018_Database.dir\SingleThread\BpTree\bpt.cc.obj -c D:\Coding\system\System2018-Database\SingleThread\BpTree\bpt.cc
 
-CMakeFiles/System2018_Database.dir/src/BpTree/bpt.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/System2018_Database.dir/src/BpTree/bpt.cc.i"
-	D:\mingw-w64\x86_64-7.3.0-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\qydyx\Desktop\System2018-Database\src\BpTree\bpt.cc > CMakeFiles\System2018_Database.dir\src\BpTree\bpt.cc.i
+CMakeFiles/System2018_Database.dir/SingleThread/BpTree/bpt.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/System2018_Database.dir/SingleThread/BpTree/bpt.cc.i"
+	C:\compiler\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Coding\system\System2018-Database\SingleThread\BpTree\bpt.cc > CMakeFiles\System2018_Database.dir\SingleThread\BpTree\bpt.cc.i
 
-CMakeFiles/System2018_Database.dir/src/BpTree/bpt.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/System2018_Database.dir/src/BpTree/bpt.cc.s"
-	D:\mingw-w64\x86_64-7.3.0-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\qydyx\Desktop\System2018-Database\src\BpTree\bpt.cc -o CMakeFiles\System2018_Database.dir\src\BpTree\bpt.cc.s
+CMakeFiles/System2018_Database.dir/SingleThread/BpTree/bpt.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/System2018_Database.dir/SingleThread/BpTree/bpt.cc.s"
+	C:\compiler\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Coding\system\System2018-Database\SingleThread\BpTree\bpt.cc -o CMakeFiles\System2018_Database.dir\SingleThread\BpTree\bpt.cc.s
 
-CMakeFiles/System2018_Database.dir/src/BpTree/bpt.cc.obj.requires:
+CMakeFiles/System2018_Database.dir/SingleThread/BpTree/bpt.cc.obj.requires:
 
-.PHONY : CMakeFiles/System2018_Database.dir/src/BpTree/bpt.cc.obj.requires
+.PHONY : CMakeFiles/System2018_Database.dir/SingleThread/BpTree/bpt.cc.obj.requires
 
-CMakeFiles/System2018_Database.dir/src/BpTree/bpt.cc.obj.provides: CMakeFiles/System2018_Database.dir/src/BpTree/bpt.cc.obj.requires
-	$(MAKE) -f CMakeFiles\System2018_Database.dir\build.make CMakeFiles/System2018_Database.dir/src/BpTree/bpt.cc.obj.provides.build
-.PHONY : CMakeFiles/System2018_Database.dir/src/BpTree/bpt.cc.obj.provides
+CMakeFiles/System2018_Database.dir/SingleThread/BpTree/bpt.cc.obj.provides: CMakeFiles/System2018_Database.dir/SingleThread/BpTree/bpt.cc.obj.requires
+	$(MAKE) -f CMakeFiles\System2018_Database.dir\build.make CMakeFiles/System2018_Database.dir/SingleThread/BpTree/bpt.cc.obj.provides.build
+.PHONY : CMakeFiles/System2018_Database.dir/SingleThread/BpTree/bpt.cc.obj.provides
 
-CMakeFiles/System2018_Database.dir/src/BpTree/bpt.cc.obj.provides.build: CMakeFiles/System2018_Database.dir/src/BpTree/bpt.cc.obj
+CMakeFiles/System2018_Database.dir/SingleThread/BpTree/bpt.cc.obj.provides.build: CMakeFiles/System2018_Database.dir/SingleThread/BpTree/bpt.cc.obj
 
 
 # Object files for target System2018_Database
 System2018_Database_OBJECTS = \
-"CMakeFiles/System2018_Database.dir/src/main.cpp.obj" \
-"CMakeFiles/System2018_Database.dir/src/BpTree/bpt.cc.obj"
+"CMakeFiles/System2018_Database.dir/SingleThread/main.cpp.obj" \
+"CMakeFiles/System2018_Database.dir/SingleThread/BpTree/bpt.cc.obj"
 
 # External object files for target System2018_Database
 System2018_Database_EXTERNAL_OBJECTS =
 
-System2018_Database.exe: CMakeFiles/System2018_Database.dir/src/main.cpp.obj
-System2018_Database.exe: CMakeFiles/System2018_Database.dir/src/BpTree/bpt.cc.obj
+System2018_Database.exe: CMakeFiles/System2018_Database.dir/SingleThread/main.cpp.obj
+System2018_Database.exe: CMakeFiles/System2018_Database.dir/SingleThread/BpTree/bpt.cc.obj
 System2018_Database.exe: CMakeFiles/System2018_Database.dir/build.make
 System2018_Database.exe: CMakeFiles/System2018_Database.dir/linklibs.rsp
 System2018_Database.exe: CMakeFiles/System2018_Database.dir/objects1.rsp
 System2018_Database.exe: CMakeFiles/System2018_Database.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\qydyx\Desktop\System2018-Database\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable System2018_Database.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Coding\system\System2018-Database\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable System2018_Database.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\System2018_Database.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -126,8 +126,8 @@ CMakeFiles/System2018_Database.dir/build: System2018_Database.exe
 
 .PHONY : CMakeFiles/System2018_Database.dir/build
 
-CMakeFiles/System2018_Database.dir/requires: CMakeFiles/System2018_Database.dir/src/main.cpp.obj.requires
-CMakeFiles/System2018_Database.dir/requires: CMakeFiles/System2018_Database.dir/src/BpTree/bpt.cc.obj.requires
+CMakeFiles/System2018_Database.dir/requires: CMakeFiles/System2018_Database.dir/SingleThread/main.cpp.obj.requires
+CMakeFiles/System2018_Database.dir/requires: CMakeFiles/System2018_Database.dir/SingleThread/BpTree/bpt.cc.obj.requires
 
 .PHONY : CMakeFiles/System2018_Database.dir/requires
 
@@ -136,6 +136,6 @@ CMakeFiles/System2018_Database.dir/clean:
 .PHONY : CMakeFiles/System2018_Database.dir/clean
 
 CMakeFiles/System2018_Database.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\qydyx\Desktop\System2018-Database C:\Users\qydyx\Desktop\System2018-Database C:\Users\qydyx\Desktop\System2018-Database\cmake-build-debug C:\Users\qydyx\Desktop\System2018-Database\cmake-build-debug C:\Users\qydyx\Desktop\System2018-Database\cmake-build-debug\CMakeFiles\System2018_Database.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\Coding\system\System2018-Database D:\Coding\system\System2018-Database D:\Coding\system\System2018-Database\cmake-build-debug D:\Coding\system\System2018-Database\cmake-build-debug D:\Coding\system\System2018-Database\cmake-build-debug\CMakeFiles\System2018_Database.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/System2018_Database.dir/depend
 

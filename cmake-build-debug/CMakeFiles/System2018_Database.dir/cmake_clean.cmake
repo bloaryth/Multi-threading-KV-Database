@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/System2018_Database.dir/src/main.cpp.obj"
-  "CMakeFiles/System2018_Database.dir/src/BpTree/bpt.cc.obj"
+  "CMakeFiles/System2018_Database.dir/SingleThread/main.cpp.obj"
+  "CMakeFiles/System2018_Database.dir/SingleThread/BpTree/bpt.cc.obj"
   "System2018_Database.pdb"
   "System2018_Database.exe"
   "System2018_Database.exe.manifest"

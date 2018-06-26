@@ -7,9 +7,18 @@
 
 #include <bits/exception.h>
 
-class UnknownCommandType : public std::exception {
+namespace Dytz {
 
-};
+    class UnknownCommandType : public std::exception {
+
+    };
+
+    class OpenFileError : public std::exception {
+
+    };
+
+
+}
 
 
 
