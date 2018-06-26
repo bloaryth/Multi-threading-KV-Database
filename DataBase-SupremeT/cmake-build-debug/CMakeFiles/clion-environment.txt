@@ -1,0 +1,2 @@
+ToolSet: w64 3.4@C:\MinGW64\MinGW64
+CMake: 3.6.3@D:\c++\CLion 2016.3.2\bin\cmake\bin\cmake.exe

@@ -1,0 +1,3 @@
+"D:\c++\CLion 2016.3.2\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\DataBase.dir/objects.a
+C:\MinGW64\MinGW64\bin\ar.exe cr CMakeFiles\DataBase.dir/objects.a @CMakeFiles\DataBase.dir\objects1.rsp
+C:\MinGW64\MinGW64\bin\g++.exe  -g   -Wl,--whole-archive CMakeFiles\DataBase.dir/objects.a -Wl,--no-whole-archive  -o DataBase.exe -Wl,--out-implib,libDataBase.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\DataBase.dir\linklibs.rsp
