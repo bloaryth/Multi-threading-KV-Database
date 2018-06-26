@@ -45,7 +45,7 @@ inline int keycmp(const key_t &a, const key_t &b)
 
 }
 
-const int VALUE_SIZE = 1024;
+const int VALUE_SIZE = 10240;
 
 struct value_t
 {
