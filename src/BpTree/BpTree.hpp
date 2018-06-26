@@ -23,11 +23,15 @@ private:
 	mutable std::shared_mutex treeMutex;
 	std::map<key_type, std::unique_ptr<std::shared_mutex>> mutexMap;
 	
+	bool haveMutex;
+	
 public:
-	BpTree(const char* filename)
+	BpTree(const char* filename, bool setMutex)
 	{
 		tree = new bpt::bplus_tree(filename);
-		mutexMap.clear();
+		haveMutex = setMutex;
+		if(haveMutex)
+			mutexMap.clear();
 	}
 	
 	bool find(const key_type & key)
@@ -42,7 +46,8 @@ public:
 	
 	value_type get(const key_type & key)
 	{
-		std::shared_lock<std::shared_mutex> lock(*mutexMap[key]);
+		if(haveMutex)
+			std::shared_lock<std::shared_mutex> lock(*mutexMap[key]);
 		
 		value_type *p = new value_type("");
 		int temp = tree->search(key, p);
@@ -56,12 +61,15 @@ public:
 	
 	bool insert(const key_type & key, const value_type & value)
 	{
-		std::unique_lock<std::shared_mutex> bigLock(treeMutex);
-		
-		std::shared_mutex *mtx = new std::shared_mutex;
-		
-		mutexMap.emplace(key, mtx);
-		std::unique_lock<std::shared_mutex> lock(*mtx);
+		if(haveMutex)
+		{
+			std::unique_lock<std::shared_mutex> bigLock(treeMutex);
+			
+			std::shared_mutex *mtx = new std::shared_mutex;
+			
+			mutexMap.emplace(key, mtx);
+			std::unique_lock<std::shared_mutex> lock(*mtx);
+		}
 		
 		value_type *p = new value_type("");
 		int rtn = tree->search(key, p);
@@ -74,7 +82,8 @@ public:
 	
 	bool update(const key_type & key, const value_type & value)
 	{
-		std::unique_lock<std::shared_mutex> lock(*mutexMap[key]);
+		if(haveMutex)
+			std::unique_lock<std::shared_mutex> lock(*mutexMap[key]);
 		
 		value_type *p = new value_type("");
 		int rtn = tree->search(key, p);
@@ -87,8 +96,11 @@ public:
 	
 	bool erase(const key_type & key)
 	{
-		std::unique_lock<std::shared_mutex> bigLock(treeMutex);
-		std::unique_lock<std::shared_mutex> lock(*mutexMap[key]);
+		if(haveMutex)
+		{
+			std::unique_lock<std::shared_mutex> bigLock(treeMutex);
+			std::unique_lock<std::shared_mutex> lock(*mutexMap[key]);
+		}
 		
 		value_type *p = new value_type("");
 		int rtn = tree->search(key, p);

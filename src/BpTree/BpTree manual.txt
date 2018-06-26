@@ -10,6 +10,9 @@ BpTree Manual
 2018.6.24
 	1.添加了多线程支持（c++17, mutex, shared_mutex, thread）
 	2.【重要】 API 用法有所变化，请务必关注！！！
+	
+2018.6.26
+	1.添加了shared_mutex开关，适用于需要/不需要加锁的情况
 
 ------ 简介 ------
 
@@ -28,7 +31,8 @@ value_type 为1024字节 char 型的包装，通过 .str 获得数据。
 
 ------ API 列表 ------
 
-BpTree (const char * filename)
+【2018.6.26更新！！！】
+BpTree (const char * filename, bool setMutex)
 描述:
 	构造函数。
 返回值： 
@@ -41,6 +45,9 @@ BpTree (const char * filename)
 		路径上的文件夹必须已经存在，但数据文件不必已经存在。
 		数据采用单文件存储，为二进制文件形式。
 		若文件已存在，BpTree 会读取目标文件中的数据。
+	setMutex:
+		true: BpTree会进行加锁操作
+		false: BpTree不会进行加锁操作
 		
 		
 bool find(const key_type & key)

@@ -5,13 +5,5 @@ CMakeFiles/System2018_Database.dir/src/BpTree/bpt.cc.obj: ../src/BpTree/bpt.cc
 CMakeFiles/System2018_Database.dir/src/BpTree/bpt.cc.obj: ../src/BpTree/bpt.h
 CMakeFiles/System2018_Database.dir/src/BpTree/bpt.cc.obj: ../src/BpTree/predefined.h
 
-CMakeFiles/System2018_Database.dir/src/main.cpp.obj: ../src/BpTree/BpTree.hpp
-CMakeFiles/System2018_Database.dir/src/main.cpp.obj: ../src/BpTree/bpt.h
-CMakeFiles/System2018_Database.dir/src/main.cpp.obj: ../src/BpTree/predefined.h
-CMakeFiles/System2018_Database.dir/src/main.cpp.obj: ../src/TranMgnt/DataSet.h
-CMakeFiles/System2018_Database.dir/src/main.cpp.obj: ../src/TranMgnt/Database.h
-CMakeFiles/System2018_Database.dir/src/main.cpp.obj: ../src/TranMgnt/Error.h
-CMakeFiles/System2018_Database.dir/src/main.cpp.obj: ../src/TranMgnt/Logger.h
-CMakeFiles/System2018_Database.dir/src/main.cpp.obj: ../src/TranMgnt/Parser.h
 CMakeFiles/System2018_Database.dir/src/main.cpp.obj: ../src/main.cpp
 
