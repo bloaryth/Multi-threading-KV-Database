@@ -61,6 +61,14 @@ namespace Dytz {
             process(ss);
             return *this;
         }
+        
+        Database& process(const std::ifstream &i)
+        {
+            std::stringstream ss;
+            ss << i.rdbuf();
+            process(ss);
+            return *this;
+        }
 
         std::stringstream& getOutput() {
             return ss;
@@ -74,7 +82,8 @@ namespace Dytz {
                     put(k, v);
                     break;
                 case InstCommand::GET:
-                    ss << get(k) << ' ';
+                    if(get(k) != "")
+                        ss << get(k) << '\n';
                     break;
                 case InstCommand::DEL:
                     del(k);

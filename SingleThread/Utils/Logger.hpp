@@ -63,7 +63,13 @@ namespace Dytz {
 
         // create log
         void createLog(const std::string &transaction) {
-            std::ofstream logFile(logPath, std::ios::app);
+            std::ifstream inLog(logPath);
+            std::ofstream logFile;
+            if(!inLog) {
+                logFile.open(logPath, std::ios::out);
+            } else {
+                logFile.open(logPath, std::ios::app);
+            }
             if (!logFile) {
                 throw OpenFileError();
             }

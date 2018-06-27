@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/Coding/system/System2018-Database/SingleThread/BpTree/bpt.cc" "D:/Coding/system/System2018-Database/cmake-build-debug/CMakeFiles/System2018_Database.dir/SingleThread/BpTree/bpt.cc.obj"
-  "D:/Coding/system/System2018-Database/SingleThread/main.cpp" "D:/Coding/system/System2018-Database/cmake-build-debug/CMakeFiles/System2018_Database.dir/SingleThread/main.cpp.obj"
+  "C:/Users/qydyx/Desktop/System2018-Database/SingleThread/BpTree/bpt.cc" "C:/Users/qydyx/Desktop/System2018-Database/cmake-build-debug/CMakeFiles/System2018_Database.dir/SingleThread/BpTree/bpt.cc.obj"
+  "C:/Users/qydyx/Desktop/System2018-Database/SingleThread/main.cpp" "C:/Users/qydyx/Desktop/System2018-Database/cmake-build-debug/CMakeFiles/System2018_Database.dir/SingleThread/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
