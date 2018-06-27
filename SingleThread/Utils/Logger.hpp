@@ -9,6 +9,7 @@
 #include <string>
 #include <fstream>
 #include <vector>
+#include <io.h>
 #include "Parser.hpp"
 #include "../Database.hpp"
 
@@ -30,11 +31,15 @@ namespace Dytz {
             }
             std::string cur_line;
             while (std::getline(logRecord, cur_line)) {}
+            if (_access(cur_line.c_str(), 0) == -1) {
+                std::ofstream logFile(cur_line);
+                logFile.close();
+            }
             return cur_line;
         };
 
         std::vector<std::string> getWholeLog() {
-//            logPath = getLastLogPath();
+            logPath = getLastLogPath();
             std::ifstream logFile(logPath);
             if (!logFile.is_open()) {
                 throw OpenFileError();
@@ -49,13 +54,11 @@ namespace Dytz {
 
     public:
         Logger() {
-            std::ifstream logRecord(LOG_RECORD_PATH);
-            if (!logRecord) {
-                std::ofstream logRecordOut(LOG_RECORD_PATH, std::ios::out);
+            if (_access(LOG_RECORD_PATH.c_str(), 0) == -1) {
+                std::ofstream logRecordOut(LOG_RECORD_PATH);
                 logRecordOut << "LOG-" << 0 << ".txt";
                 logRecordOut.close();
             }
-            logRecord.close();
             logPath = getLastLogPath();
         };
 

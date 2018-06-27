@@ -11,20 +11,24 @@
 #include <memory>
 #include <atomic>
 #include <mutex>
-#include <stdatomic.h>
 #include "SyncQueue.hpp"
 
 namespace Dytz {
 
     const int MaxTaskCount = 100;
 
+    class Task {
+        std::function
+    };
+
     class ThreadPool {
     private:
-        using Task = decltype([]{});
+//        using Task = decltype([]{});
+        using Task =
 
         std::list<std::shared_ptr<std::thread>> threads;
         SyncQueue<Task> syncQueue;
-        atomic_bool running;
+        std::atomic_bool running;
         std::once_flag stopFlag;
 
     public:
