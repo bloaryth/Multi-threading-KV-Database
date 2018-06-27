@@ -35,7 +35,7 @@ namespace Dytz {
             restore();
         }
 
-        Database& process(std::stringstream & s, std::stringstream & output) {
+        void process(std::stringstream & s, std::stringstream & output) {
             logger.createLog("@START");
             std::string command;
             while (std::getline(s, command)) {
@@ -55,7 +55,6 @@ namespace Dytz {
             }
             logger.createLog("@END");
             output = std::move(ss);
-            return *this;
         }
 
         // s means a transaction
