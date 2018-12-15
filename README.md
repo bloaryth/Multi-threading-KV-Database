@@ -1,4 +1,4 @@
-# Operating-System-2018-Database
+# Multi-threading-KV-Database
 THis is project for ACM 2018 OS/System class.
 
 ### Group Members
